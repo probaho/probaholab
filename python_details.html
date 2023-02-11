@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>ProbahoLab-Python Course</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+
+        <!-- bangla font -->
+        <link href="https://fonts.maateen.me/apona-lohit/font.css" rel="stylesheet">
+    <style>
+        .border-round {
+            border-radius: 30px;
+            border-color: darkgray;
+            font-family: Telenor,Helvetica Neue,Helvetica,Arial,Noto Sans Bengali,sans-serif;
+
+        }
+        h1,h2,h3,h4 
+        {
+            font-family: Telenor,Helvetica Neue,Helvetica,Arial,Noto Sans Bengali,sans-serif;
+        }
+        .course-admission-title{
+            color: #000000;
+            font-family: Telenor,Helvetica Neue,Helvetica,Arial,Noto Sans Bengali,sans-serif;
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 42px;
+            
+        }
+        .course-admission
+        {
+            height: 120%;
+        }
+        p{
+            color: #2b2b2be6;
+            font-family: Telenor,Helvetica Neue,Helvetica,Arial,Noto Sans Bengali,sans-serif;
+            font-size: 26px;
+            font-weight: 500;
+            line-height: 40px;
+            letter-spacing: 0;
+            margin: 6px 0 0;
+            
+        }
+       .footer-link li,.footer-element li 
+       {
+        font-family: Telenor,Helvetica Neue,Helvetica,Arial,Noto Sans Bengali,sans-serif;
+        font-size:20px;
+        list-style:none;
+        line-height:45px;
+        font-weight:600;
+        text-decoration: none;
+       }
+       
+       .footer-link li a{
+        text-decoration: none;
+        color: #033a61;
+        margin-left: 0px;
+        padding-left: 0px;
+       }
+       .footer-link h4
+       {
+        font-size: 25px;
+       }
+       .footer-element li img{
+        max-width: 08%;
+        margin-right: 5%;
+       }
+    .for-whose {
+        background-color: #c6ebfe;
+        border-radius: 5%;
+        padding: 2%;
+        margin: 2%; 
+    }
+    .for-whose img{
+    width: 25%;
+    }
+    .for-whose p{
+    margin-top: 10%;
+    text-align: center;
+    }
+
+    .course-outline{
+        margin-top: auto;
+        margin-bottom: 2%;
+    }
+    .course-outline ul li{
+        list-style:circle;
+        font-family: Telenor,Helvetica Neue,Helvetica,Arial,Noto Sans Bengali,sans-serif;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 25px;
+        
+    }
+
+    .where-to-job ul li{
+        list-style:circle;
+        font-family: Telenor,Helvetica Neue,Helvetica,Arial,Noto Sans Bengali,sans-serif;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 10px;
+    }
+
+    .where-to-job{
+        margin-top: auto;
+        margin-bottom: 3%;
+    }
+
+    @media screen and (min-width:768px)
+    {   
+        
+        .border-round 
+        {
+        border-radius:15px;
+        border-color: darkgray;
+        font-family: Telenor,Helvetica Neue,Helvetica,Arial,Noto Sans Bengali,sans-serif;
+
+    }
+        .where-to-job ul li
+        {
+            line-height: 22px;
+            font-size: 18px;
+        }
+        .course-overview
+        {
+            width: 150px;
+            border-radius: 6px;
+            border: 1px solid rgb(225, 222, 222);
+        }
+        .course-overview h3,h4{
+            font-size: 45%;
+            font-family: Telenor,Helvetica Neue,Helvetica,Arial,Noto Sans Bengali,sans-serif;
+            
+        }
+        .course-admission
+        {
+            height: 50%;
+            font-size: 20px;
+        }
+        .course-admission-title{
+            color: #000000;
+            font-family: Telenor,Helvetica Neue,Helvetica,Arial,Noto Sans Bengali,sans-serif;
+            font-weight: 700;
+            font-size: 35px;
+            line-height: 45px;            
+        }
+        .course-admission-content 
+        {
+            font-size: 20px;
+        }
+        
+        .course-fee h5 
+        {
+            font-size: 24px;
+        }
+        .course-fee p
+        {
+            font-size: 15px;
+        }
+        .course-fee button 
+        {
+            font-size: 16px;
+        }
+        .for-whose
+        {
+            background-color: #E2EEF6;
+            border-radius: 5%;
+            padding: 2%;
+            margin: 5%; 
+            width: 40%;
+        }
+        .for-whose p
+        {
+            font-size: 16px;
+        }
+        .for-whose img
+        {
+        width: 24%;
+        }
+
+         header p
+        {
+            
+            font-size: 25px;
+            font-weight: 300;
+            font-family: Telenor,Helvetica Neue,Helvetica,Arial,Noto Sans Bengali,sans-serif;
+            text-decoration: none;
+           
+        }
+      
+        .course-fee p 
+        {
+            font-size: 23px;
+        }
+
+        h1,h3,h4
+        {
+            font-size: 35px;
+            font-weight: 700;
+            padding: 0%;
+        }
+        
+        .header-image img{
+            width: 100%;
+            border-radius: 15px;
+            background-color: #e9edf0;
+        }
+        .footer-link
+     {
+        text-align: left;
+     }
+       .footer-link li,.footer-element li 
+       {
+        font-family: Telenor,Helvetica Neue,Helvetica,Arial,Noto Sans Bengali,sans-serif;
+        font-size:20px;
+        list-style:none;
+        line-height:30px;
+        font-weight:700;
+        text-decoration: none;
+       }
+       
+       .footer-link li a{
+        text-decoration: none;
+        color: #033a61;
+        margin-left: 0px;
+        padding-left: 0px;
+       }
+       .footer-link h4
+       {
+        font-size: 30px;
+       }
+       .footer-element li img{
+        max-width: 05%;
+        margin-right: 3%;
+       }
+    }
+    @media screen and (min-width:992px)
+    {
+        .footer-link li,.footer-element li 
+       {
+        font-family: Telenor,Helvetica Neue,Helvetica,Arial,Noto Sans Bengali,sans-serif;
+        font-size:18px;
+        list-style:none;
+        line-height:37px;
+        font-weight:700;
+       }
+       .footer-link h4
+       {
+        font-size: 22px;
+       }
+       .footer-element li img{
+        max-width: 04%;
+        margin-right: 2%;
+       }
+    }
+
+    @media screen and (min-width:1200px)
+    {
+
+    }
+    @media screen and (max-width:768px)
+    {   
+        .where-to-job ul li
+        {
+            line-height: 25px;
+        }
+        .course-overview
+        {
+            width: 150px;
+            border-radius: 6px;
+            border: 1px solid rgb(225, 222, 222);
+        }
+        .course-overview h3,h4{
+            font-size: 45%;
+            font-family: Telenor,Helvetica Neue,Helvetica,Arial,Noto Sans Bengali,sans-serif;
+            
+        }
+        .course-admission-title{
+            color: #000000;
+            font-family: Telenor,Helvetica Neue,Helvetica,Arial,Noto Sans Bengali,sans-serif;
+            font-weight: 700;
+            font-size: 25px;
+            line-height: 27px;            
+        }
+        .for-whose
+        {
+            background-color: #E2EEF6;
+            border-radius: 5%;
+            padding: 2%;
+            margin: 5%; 
+            width: 40%;
+        }
+
+        .for-whose img
+        {
+        width: 24%;
+        }
+        .for-whose p
+        {
+            font-size: 16px;
+        }
+        p
+        {
+            
+            font-size: 28px;
+            font-weight: 300;
+            font-family: Telenor,Helvetica Neue,Helvetica,Arial,Noto Sans Bengali,sans-serif;
+            text-decoration: none;
+           
+        }
+        h1,h3,h4
+        {
+            font-size: 35px;
+            font-weight: 700;
+            padding: 0%;
+        }
+        
+        .header-image img{
+            width: 100%;
+            border-radius: 15px;
+            background-color: #e9edf0;
+        }
+        .footer-link
+     {
+        text-align: left;
+     }
+       .footer-link li,.footer-element li 
+       {
+        font-family: Telenor,Helvetica Neue,Helvetica,Arial,Noto Sans Bengali,sans-serif;
+        font-size:20px;
+        list-style:none;
+        line-height:30px;
+        font-weight:700;
+        text-decoration: none;
+       }
+       
+       .footer-link li a{
+        text-decoration: none;
+        color: #033a61;
+        margin-left: 0px;
+        padding-left: 0px;
+       }
+       .footer-link h4
+       {
+        font-size: 30px;
+       }
+       .footer-element li img{
+        max-width: 05%;
+        margin-right: 3%;
+       }
+    }
+@media screen and (max-width:576px)
+    {  
+        .course-overview
+        {
+            
+            border-radius: 6px;
+            border: 1px solid rgb(225, 222, 222);
+        }
+        .course-overview h3,h4{
+            font-size: 45%;
+            font-family: Telenor,Helvetica Neue,Helvetica,Arial,Noto Sans Bengali,sans-serif;
+            
+        }
+        .course-admission-title{
+            color: #000000;
+            font-family: Telenor,Helvetica Neue,Helvetica,Arial,Noto Sans Bengali,sans-serif;
+            font-weight: 700;
+            font-size: 25px;
+            line-height: 27px;            
+        }
+        .for-whose
+        {
+            background-color: #E2EEF6;
+            border-radius: 5%;
+            padding: 2%;
+            margin: 5%; 
+            width: 40%;
+        }
+
+        .for-whose img
+        {
+        width: 24%;
+        }
+        .for-whose p
+        {
+            font-size: 16px;
+        }
+        p
+        {
+            
+            font-size: 22px;
+            font-weight: 300;
+            font-family: Telenor,Helvetica Neue,Helvetica,Arial,Noto Sans Bengali,sans-serif;
+            text-decoration: none;
+           
+        }
+        h1,h3,h4
+        {
+            font-size: 30px;
+            font-weight: 700;
+            padding: 0%;
+        }
+        
+        .header-image img{
+            width: 90%;
+            border-radius: 15px;
+            background-color: #e9edf0;
+        }
+        .footer-link li,.footer-element li 
+        {
+         font-family: Telenor,Helvetica Neue,Helvetica,Arial,Noto Sans Bengali,sans-serif;
+         font-size:16px;
+         list-style:none;
+         line-height:35px;
+         font-weight:700;
+        }
+        .footer-link h4
+        {
+         font-size: 20px;
+         text-align: center;
+        }
+        .footer-element li img{
+         max-width: 04%;
+         margin-right: 2%;
+        }
+    }
+
+    </style>
+    </head>
+    <body>
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container px-2 px-lg-2">
+                <div class="col-md-6 col-sm-6">
+                    <a class="navbar-brand" href="#!">
+                        <img src="logo/Asset 7.png" style="width: 60%;" alt="">
+                    </a>
+                </div>
+                
+                <div class="col-md-6 p-3 col-sm-6">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mb-2 mb-lg-0 ms-lg-4" style="font-size: 25px; font-family: Telenor,Helvetica Neue,Helvetica,Arial,Noto Sans Bengali,sans-serif; font-weight:400">
+                        <li class="nav-item"><a class="nav-link" href="home.html">কোর্স সমূহ</a></li>
+                        
+                       
+                    </ul>
+                   
+                </div>
+                </div>
+            </div>
+        </nav>
+
+        
+        <div class="container">
+            <div class="row mt-5 header d-flex justify-content-center text-align-center">
+                <div class="col-md-12 col-sm-12 col-lg-12 p-4">
+                    <h1 class="">পাইথন প্রোগ্রামিং </h1>
+                    <p class="mt-2 mb-2">
+                        বিশ্বের সব থেকে জনপ্রিয় প্রোগ্রামিং ল্যাংগুয়েজ এর মধ্যে পাইথন একটি। পাইথন দিয়ে মেশিন লার্নিং , ডাটা সাইন্স , ওয়েব ডেভেলপমেন্ট,সফটওয়্যার ডেভেলপমেন্ট , ওয়েব স্ক্র্যাপিং , অটোমেশন সহ বিভিন্ন সাইন্টিফিক কাজে পাইথন ব্যবহার হচ্ছে। 
+                        যেকোনো বয়সের যেকোনো ব্যাকগ্রাউন্ড এর যে কেউ পাইথন শিখে ভালো কিছু করতে পারে। 
+
+</p>
+                </div>
+                <div class="col-md-12 col-sm-12 header-image text-center col-lg-12 ">
+                    <img src="img/python card.png" alt="" style="width: 70%;">
+                </div>
+            </div>
+        </div>
+
+        <section class="mt-5 p-5 mb-5 m-auto">
+            <div class="container col-md-10 col-lg-8">
+                <div class="row d-flex justify-content-center align-item-center ms-auto">
+                    <div class="col-sm-4 col-md-4 p-4 d-flex justify-content-center align-item-center">
+                        <div class="course-overview p-3">
+                            <h6 class="text-center">
+                                Total Class
+                            </h6>
+                            <h5 class="text-center">25</h5> 
+                        </div>                          
+                    </div>
+                    <div class="col-sm-4 col-md-4 p-4 d-flex justify-content-center align-item-center">
+                        <div  class="course-overview p-3">
+                            <h6 class="text-center">
+                                Total Hour
+                            </h6>  
+                            <h5 class="text-center">25</h5> 
+                        </div>                        
+                    </div>
+
+                    <div class="col-sm-4 col-md-4 p-4 d-flex justify-content-center align-item-center" 
+                    >
+                        <div class="course-overview p-3">
+                            <h6 class="text-center">
+                                Total Projects
+                            </h6> 
+                            <h5 class="text-center">
+                                3+
+                            </h5> 
+                        </div>                         
+                    </div>
+                </div>
+            </div>
+        </section>
+            
+        <section mt-5>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-7 col-sm-12">
+                        <div class="course-outline">
+                            <h3 style="font-weight: 700;">কোর্স কারিকুলাম</h3>
+                            <div class="row pt-3">
+                                <div class="col-md-6 col-sm-6">
+                                    <ul>
+                                        <li>
+                                            Introduction To Programming
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6 col-sm-6">
+                                    <ul>
+                                        <li>
+                                            Introduction To Python
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6 col-sm-6">
+                                    <ul>
+                                        <li>
+                                            Conditions
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6 col-sm-6">
+                                    <ul>
+                                        <li>
+                                            Loop
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6 col-sm-6">
+                                    <ul>
+                                        <li>
+                                            Data Structure
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6 col-sm-6">
+                                    <ul>
+                                        <li>
+                                            OOP
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6 col-sm-6">
+                                    <ul>
+                                        <li>
+                                            Problem Solving
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6 col-sm-6">
+                                    <ul>
+                                        <li>
+                                            Logical Skill development
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="">
+                            <h3 class="" style="font-weight: 700;">যাদের জন্য এই কোর্স</h3>
+                            <div class="row">
+                                <div class="col-md-5 col-sm-6 for-whose">
+                                    <div class="text-center p-2">
+                                        <div class="">
+                                            <img src="icon/career.png" alt="">
+                                        </div>
+                                        <div>
+                                            <p>ফ্রিল্যান্সিং এ আগ্রহী</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-5 col-sm-6 for-whose">
+                                    <div class="text-center p-2">
+                                        <div class="">
+                                            <img src="icon/coding.png" alt="">
+                                        </div>
+                                        <div>
+                                            <p>কোডিং শিখতে আগ্রহী </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-5 col-sm-6 for-whose">
+                                    <div class="text-center p-2">
+                                        <div class="">
+                                            <img src="icon/foreign.png" alt="">
+                                        </div>
+                                        <div>
+                                            <p>প্রবাসী</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-5 col-sm-6 for-whose">
+                                    <div class="text-center p-2">
+                                        <div class="">
+                                            <img src="icon/housekeeper.png" alt="">
+                                        </div>
+                                        <div>
+                                            <p>গৃহিণী</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-5 for-whose">
+                                    <div class="text-center p-2">
+                                        <div class="">
+                                            <img src="icon/students.png " alt="">
+                                        </div>
+                                        <div>
+                                            <p>ছাত্র-ছাত্রী</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-5 col-sm-6 for-whose">
+                                    <div class="text-center p-2">
+                                        <div class="">
+                                            <img src="icon/job-seeker.png" alt="">
+                                        </div>
+                                        <div>
+                                            <p>চাকুরী প্রত্যাশী</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-5 mb-3">
+                            <h3>যে সকল পজিশনে জব করতে পারবেন</h3>
+                            <div class="row pt-3">
+                                <div class="col-sm-6 col-12 where-to-job">
+                                    <ul>
+                                        <li>Python Developer</li>
+                                        
+                                    </ul>
+                                </div>
+                                <div class="col-sm-6 col-12 where-to-job">
+                                    <ul>
+                                        <li>Programmer</li>
+                                        
+                                    </ul>
+                                </div>
+                                <div class="col-sm-6 col-12 where-to-job">
+                                    <ul>
+                                        <li>Web Application Developer</li>
+                                        
+                                    </ul>
+                                </div>
+                                <div class="col-sm-6 col-12 where-to-job">
+                                    <ul>
+                                        <li>Web Application Developer</li>
+                                        
+                                    </ul>
+                                </div>
+                                <div class="col-sm-6 col-12 where-to-job">
+                                    <ul>
+                                        <li>Web Application Developer</li>
+                                        
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-10 col-md-5 course-admission sticky-top border-round mx-auto mb-5" style="background:linear-gradient(#046CB5, white);
+                    "> 
+                        <div>
+                            <div class="p-3">
+                                <h4 class="course-admission-title text-white">ভর্তি চলছে!</h4>
+                                <p class="text-white course-admission-content">অনলাইন (লাইভ ক্লাস)- যে কোন ব্যাচে সুবিধামতো সময় বেছে নিয়ে ভর্তি হতে পারেন এখনই। </p>
+                                <div class="course-fee  border-round mt-5 p-3 text-black m-auto" style="background-color: #19AAF8;">
+                                    <h5 class="course-admission-title">কোর্স ফি (অনলাইন)</h5>
+                                    <p class="course-admission-content text-white">৳ ১০,০০০ টাকা </p>
+                                    <button class="text-dark mt-4 btn btn-warning btn-lg p-3 m-auto">ফ্রী ট্রায়াল ক্লাস </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <footer class='p-5' style="background:linear-gradient(#046CB5, white)"  >
+            <div class="container p-3 mt-5" style="max-height: 100%;">
+               <div class="row d-flex">
+                <div class="col-sm-8 col-md-6 col-lg-4  footer-link">
+                    <div class="footer-logo"></div>
+                    <div class="footer-element">
+                        <ul>
+                            <li>
+                                <img src="icon/phone.png" alt="">
+                                <span>+880 1601502264</span>
+                            </li>
+                            <li>
+                                <img src="icon/phone.png" alt="">
+                                <span>+880 1303700859</span>
+                            </li>
+                            <li>
+                                <img src="icon/gmail.png" alt="">
+                                <span>probaholab@gmail.com</span>
+                            </li>
+                            <li>
+                                <img src="icon/web.png" alt="">
+                                <span>probaholab.com</span>
+                            </li>
+
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-6 col-lg-4  footer-link">
+                    <h5 class="text-center">Quick Link</h5>
+                    <ul class="">
+                        <li><a href="">কোর্সসমূহ</a></li>
+                        <li><a href="">আমাদের সম্পর্কে</a></li>
+                        <li><a href="">যোগাযোগ</a></li>
+                        
+                    </ul>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4  footer-link">
+                      
+                            <h4>আমাদের অফার সম্পর্কে জানতে </h4>
+                        <div class="p-2">
+                            <a href="https://www.linkedin.com/company/probaholab/posts/?feedView=all&viewAsMember=true" class="px-2"><img style="max-width:10%" class = "#" src="icon/facebook.png" alt=""></a>
+
+                            <a href="" class="px-2"><img style="max-width:10%" class = "" src="icon/twitter.png" alt=""></a>
+
+                            <a href="https://www.linkedin.com/company/probaholab/posts/?feedView=all&viewAsMember=true" class="px-2"><img style="max-width:10%" class = "" src="icon/linkedin.png" alt=""></a>
+
+                        </div>
+                </div>
+               </div>
+            </div>
+        </footer>
+        
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
